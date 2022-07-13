@@ -127,6 +127,14 @@ impl Md {
         unsafe { MdRef::from_ptr(ffi::EVP_sha1() as *mut _) }
     }
 
+    pub fn blake2b512() -> &'static MdRef {
+        unsafe { MdRef::from_ptr(ffi::Evp_blake2b512() as *mut _) }
+    }
+
+    pub fn blake2b256() -> &'static MdRef {
+        unsafe { MdRef::from_ptr(ffi::EVP_blake2s256() as *mut _) }
+    }
+
     #[inline]
     pub fn sha224() -> &'static MdRef {
         unsafe { MdRef::from_ptr(ffi::EVP_sha224() as *mut _) }

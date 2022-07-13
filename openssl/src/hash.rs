@@ -77,6 +77,14 @@ impl MessageDigest {
         unsafe { MessageDigest(ffi::EVP_sha1()) }
     }
 
+    pub fn blake2b512() -> MessageDigest {
+        unsafe { MessageDigest(ffi::Evp_blake2b512()) }
+    }
+
+    pub fn blake2s256() -> MessageDigest {
+        unsafe { MessageDigest(ffi::EVP_blake2s256()) }
+    }
+
     pub fn sha224() -> MessageDigest {
         unsafe { MessageDigest(ffi::EVP_sha224()) }
     }
