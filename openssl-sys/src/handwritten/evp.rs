@@ -270,7 +270,7 @@ extern "C" {
     pub fn EVP_md_null() -> *const EVP_MD;
     pub fn EVP_md5() -> *const EVP_MD;
     pub fn EVP_sha1() -> *const EVP_MD;
-    pub fn Evp_blake2b512() -> *const EVP_MD;
+    pub fn EVP_blake2b512() -> *const EVP_MD;
     pub fn EVP_blake2s256() -> *const EVP_MD;
     pub fn EVP_sha224() -> *const EVP_MD;
     pub fn EVP_sha256() -> *const EVP_MD;

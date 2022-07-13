@@ -78,7 +78,7 @@ impl MessageDigest {
     }
 
     pub fn blake2b512() -> MessageDigest {
-        unsafe { MessageDigest(ffi::Evp_blake2b512()) }
+        unsafe { MessageDigest(ffi::EVP_blake2b512()) }
     }
 
     pub fn blake2s256() -> MessageDigest {
