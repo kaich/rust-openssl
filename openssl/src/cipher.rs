@@ -303,6 +303,10 @@ impl Cipher {
         unsafe { CipherRef::from_ptr(ffi::EVP_des_ede3_cbc() as *mut _) }
     }
 
+    pub fn des_ede3_ecb() -> &'static CipherRef {
+        unsafe { CipherRef::from_ptr(ffi::EVP_des_ede3_ecb() as *mut _) }
+    }
+
     pub fn des_ede3_cfb64() -> &'static CipherRef {
         unsafe { CipherRef::from_ptr(ffi::EVP_des_ede3_cfb64() as *mut _) }
     }

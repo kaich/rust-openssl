@@ -267,6 +267,10 @@ impl Cipher {
         unsafe { Cipher(ffi::EVP_des_ede3_cbc()) }
     }
 
+    pub fn des_ede3_ecb() -> Cipher {
+        unsafe { Cipher(ffi::EVP_des_ede3_ecb()) }
+    }
+
     pub fn des_ede3_cfb64() -> Cipher {
         unsafe { Cipher(ffi::EVP_des_ede3_cfb64()) }
     }
